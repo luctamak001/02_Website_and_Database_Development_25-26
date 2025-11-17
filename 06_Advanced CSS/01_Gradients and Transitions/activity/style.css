@@ -41,7 +41,8 @@ h1 {
          • Blend 3+ colors smoothly from one side to the other.
        - Docs: https://www.w3schools.com/css/css3_gradients.asp
     */
-    /* background-image: ... */
+     background-image: radial-gradient(60% 80% at 20% 20%, rgba(255, 255, 255, 0.3), transparent 60%),
+     linear-gradient(135deg, #6a5af9 0%, #b65ef1 45%, #ff7ac3 100%);
 
 
     /* TODO 2: Add a `box-shadow` to make the element look lifted off the page.
@@ -52,7 +53,7 @@ h1 {
          • an RGBA color with partial transparency (dark but see-through).
        - Docs: https://www.w3schools.com/css/css3_shadows_box.asp
     */
-    /* box-shadow: ... */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 
 
     /* TODO 3: Use `transform` to control the starting position.
@@ -60,7 +61,7 @@ h1 {
        - Later, on `:hover`, you can move it slightly up with a negative `translateY`.
        - Docs: https://www.w3schools.com/css/css3_2dtransforms.asp
     */
-    /* transform: ... */
+     transform: translateY(0);
 
 
     /* TODO 4: Add smooth `transition` effects.
@@ -74,7 +75,7 @@ h1 {
        - Docs: https://www.w3schools.com/css/css3_transitions.asp
        - Filter reference: https://www.w3schools.com/cssref/css3_pr_filter.php
     */
-    /* transition: ... */
+     transition: transform 250ms ease-in-out;
 
 }
 
@@ -85,7 +86,7 @@ h1 {
        - This should be used on a hover or active state so the element moves up a bit.
        - Docs: https://www.w3schools.com/css/css3_2dtransforms.asp
     */
-    /* transform: ... */
+     transform: translateY(-8px);
 
 
     /* TODO 2: Increase the `box-shadow` compared to the normal state.
@@ -96,7 +97,8 @@ h1 {
        - This makes the lifted state feel more dramatic and “elevated.”
        - Docs: https://www.w3schools.com/css/css3_shadows_box.asp
     */
-    /* box-shadow: ... */
+     box-shadow: 0px 12px 25px rgba(255, 0, 50, 0.3);
+     transform: translateY(-5px);
 
 
     /* TODO 3: Use `filter` to slightly enhance the colors.
@@ -105,7 +107,7 @@ h1 {
        - You can chain filters later (e.g., `brightness()`, `blur()`) if you want.
        - Docs: https://www.w3schools.com/cssref/css3_pr_filter.php
     */
-    /* filter: ... */
+     filter: saturate(1.1);
 
 }
 
