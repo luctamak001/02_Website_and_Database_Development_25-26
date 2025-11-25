@@ -226,6 +226,7 @@ section h2 {
 #myDiv34 {
 
     /* Rotation happens first, then translation */
+    transform: translate(100px, 0) rotate(30deg);
 }
 
 /* Example 2: scale + translate vs translate + scale */
@@ -240,12 +241,14 @@ section h2 {
 }
 
 /* Give 3D examples some perspective so rotateX/rotateY look 3D */
-.examples-grid-3d { 
+.examples-grid-3d {
+
 }
 
 /* 3D rotation examples */
 
 #myDiv37 {
+    transform: rotateX(25deg);
 }
 
 #myDiv38 {
